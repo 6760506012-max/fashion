@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คอลเลคชั่นใหม่ | FN Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a class="logo" href="index.html">
+        FN<br>
+        <span>Fashion</span>
+    </a>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a class="active" href="new.html">คอลเลคชั่นใหม่</a>
+        <a href="long.html">แขนยาว</a>
+        <a href="outer.html">เสื้อคลุม</a>
+        <a href="dress.html">ชุดเดรส</a>
+    </nav>
+
+    <div class="icons">
+        <button onclick="toggleSearch()">⌕</button>
+
+        <a href="cart.html">
+            🛒 <b id="cartCount">0</b>
+        </a>
+
+        <a href="account.html">◉</a>
+    </div>
+
+</header>
+
+<div id="searchBox" class="search-box">
+
+    <input
+        id="searchInput"
+        onkeyup="searchProducts()"
+        placeholder="ค้นหาสินค้า..."
+    >
+
+</div>
+
+<main class="catalog">
+
+    <h1>คอลเลคชั่นใหม่</h1>
+
+    <p class="sub">
+        New Collection
+    </p>
+
+    <div class="products" id="productList"></div>
+
+</main>
+
+<script>
+
+const pageProducts = [
+
+    ["Lama Blouse", 260, "#eee1d9"],
+
+    ["Rosie Blouse", 289, "#e9cdd0"],
+
+    ["Sky Blouse", 299, "#c7d9e8"],
+
+    ["Aura Blouse", 329, "#6c4b40"],
+
+    ["Flora Blouse", 349, "#58654b"],
+
+    ["Daisy Blouse", 299, "#e8d88e"]
+
+];
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

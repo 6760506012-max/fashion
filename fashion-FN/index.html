@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RN Fashion | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<img src="w3html.gif" alt="W3Schools.com" width="100" height="132">
+<header class="header">
+
+    <a class="logo" href="index.html">
+        FN<br>
+        <span>Fashion</span>
+    </a>
+
+    <nav>
+        <a class="active" href="index.html">HOME</a>
+        <a href="new.html">คอลเลคชั่นใหม่</a>
+        <a href="long.html">แขนยาว</a>
+        <a href="outer.html">เสื้อคลุม</a>
+        <a href="dress.html">ชุดเดรส</a>
+    </nav>
+
+    <div class="icons">
+        <button onclick="toggleSearch()">⌕</button>
+        <a href="cart.html">
+            🛒 <b id="cartCount">0</b>
+        </a>
+        <a href="account.html">◉</a>
+    </div>
+
+</header>
+
+<div id="searchBox" class="search-box">
+    <input
+        id="searchInput"
+        onkeyup="searchProducts()"
+        placeholder="ค้นหาสินค้า..."
+    >
+</div>
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <input
+            class="hero-search"
+            placeholder="⌕  ค้นหาสินค้า..."
+        >
+
+        <p>NEW ARRIVAL</p>
+
+        <h1>
+            Elegance<br>
+            for Every Day
+        </h1>
+
+        <span>
+            แต่งตัวเรียบหรูได้ทุกวันในแบบของคุณ
+        </span>
+
+        <div class="brand">
+            FN
+        </div>
+
+    </div>
+
+    <div class="hero-models">
+        FN<br>
+        FASHION
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2>คอลเลคชั่นใหม่</h2>
+
+    <div class="feature-grid">
+
+        <a href="new.html" class="feature small">
+            NEW<br>
+            COLLECTION
+        </a>
+
+        <a href="new.html" class="feature big">
+            Elegant<br>
+            Daily Look
+        </a>
+
+        <a href="dress.html" class="feature small">
+            DRESS<br>
+            COLLECTION
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

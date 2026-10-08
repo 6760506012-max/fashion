@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ชุดเดรส | RN Fashion</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <a class="logo" href="index.html">
+        FN<br>
+        <span>Fashion</span>
+    </a>
+
+    <nav>
+
+        <a href="index.html">
+            HOME
+        </a>
+
+        <a href="new.html">
+            คอลเลคชั่นใหม่
+        </a>
+
+        <a href="long.html">
+            แขนยาว
+        </a>
+
+        <a href="outer.html">
+            เสื้อคลุม
+        </a>
+
+        <a class="active" href="dress.html">
+            ชุดเดรส
+        </a>
+
+    </nav>
+
+    <div class="icons">
+
+        <button onclick="toggleSearch()">⌕</button>
+
+        <a href="cart.html">
+            🛒 <b id="cartCount">0</b>
+        </a>
+
+        <a href="account.html">
+            ◉
+        </a>
+
+    </div>
+
+</header>
+
+<div id="searchBox" class="search-box">
+
+    <input
+        id="searchInput"
+        onkeyup="searchProducts()"
+        placeholder="ค้นหาสินค้า..."
+    >
+
+</div>
+
+<main class="catalog">
+
+    <h1>ชุดเดรส</h1>
+
+    <p class="sub">
+        Dress Collection
+    </p>
+
+    <div class="products" id="productList"></div>
+
+</main>
+
+<script>
+
+const pageProducts = [
+
+    ["Lily Dress", 1409, "#f2eee8"],
+
+    ["Roselle Dress", 1529, "#e7c8d0"],
+
+    ["Skyla Dress", 1549, "#bcd5ea"],
+
+    ["Sienna Dress", 1299, "#b8a99a"],
+
+    ["Celeste Dress", 1529, "#d9dde0"],
+
+    ["Aurelia Dress", 1500, "#eadfce"]
+
+];
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

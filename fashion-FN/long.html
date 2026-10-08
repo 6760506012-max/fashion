@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เสื้อแขนยาว | RN Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a class="logo" href="index.html">
+        FN<br>
+        <span>Fashion</span>
+    </a>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="new.html">คอลเลคชั่นใหม่</a>
+        <a class="active" href="long.html">แขนยาว</a>
+        <a href="outer.html">เสื้อคลุม</a>
+        <a href="dress.html">ชุดเดรส</a>
+    </nav>
+
+    <div class="icons">
+
+        <button onclick="toggleSearch()">⌕</button>
+
+        <a href="cart.html">
+            🛒 <b id="cartCount">0</b>
+        </a>
+
+        <a href="account.html">◉</a>
+
+    </div>
+
+</header>
+
+<div id="searchBox" class="search-box">
+
+    <input
+        id="searchInput"
+        onkeyup="searchProducts()"
+        placeholder="ค้นหาสินค้า..."
+    >
+
+</div>
+
+<main class="catalog">
+
+    <h1>เสื้อแขนยาว</h1>
+
+    <p class="sub">
+        Long Sleeve Collection
+    </p>
+
+    <div class="products" id="productList"></div>
+
+</main>
+
+<script>
+
+const pageProducts = [
+
+    ["Lama Long Sleeve", 320, "#e6ded5"],
+
+    ["Rosie Long Sleeve", 329, "#d9b7b8"],
+
+    ["Sky Long Sleeve", 350, "#b9cee1"],
+
+    ["Aura Long Sleeve", 329, "#543d35"],
+
+    ["Flora Long Sleeve", 349, "#536044"],
+
+    ["Daisy Long Sleeve", 320, "#e8d982"]
+
+];
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

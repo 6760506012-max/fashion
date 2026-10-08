@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>เสื้อคลุม | RN Fashion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a class="logo" href="index.html">
+        FN<br>
+        <span>Fashion</span>
+    </a>
+
+    <nav>
+
+        <a href="index.html">HOME</a>
+
+        <a href="new.html">
+            คอลเลคชั่นใหม่
+        </a>
+
+        <a href="long.html">
+            แขนยาว
+        </a>
+
+        <a class="active" href="outer.html">
+            เสื้อคลุม
+        </a>
+
+        <a href="dress.html">
+            ชุดเดรส
+        </a>
+
+    </nav>
+
+    <div class="icons">
+
+        <button onclick="toggleSearch()">⌕</button>
+
+        <a href="cart.html">
+            🛒 <b id="cartCount">0</b>
+        </a>
+
+        <a href="account.html">◉</a>
+
+    </div>
+
+</header>
+
+<div id="searchBox" class="search-box">
+
+    <input
+        id="searchInput"
+        onkeyup="searchProducts()"
+        placeholder="ค้นหาสินค้า..."
+    >
+
+</div>
+
+<main class="catalog">
+
+    <h1>เสื้อคลุม</h1>
+
+    <p class="sub">
+        Outerwear Collection
+    </p>
+
+    <div class="products" id="productList"></div>
+
+</main>
+
+<script>
+
+const pageProducts = [
+
+    ["Black Cardigan", 329, "#242321"],
+
+    ["Cream Cardigan", 359, "#ded6c9"],
+
+    ["Mocha Outer", 390, "#765747"],
+
+    ["Olive Jacket", 420, "#65705b"],
+
+    ["Pink Cardigan", 329, "#dcb9bd"],
+
+    ["Beige Outer", 399, "#c9b8a1"]
+
+];
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
